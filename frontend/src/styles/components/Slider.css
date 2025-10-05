@@ -1,0 +1,28 @@
+.slider {
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+  width: 400px;
+}
+
+.slide-track {
+  display: flex;
+  gap: 50px;
+  animation: scroll 20s linear infinite;
+}
+
+.slide-track img {
+  width: 250px;
+  height: 70px;
+  object-fit: contain;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
