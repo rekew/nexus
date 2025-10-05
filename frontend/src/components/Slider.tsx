@@ -1,27 +1,45 @@
 import "../styles/components/Slider.css";
 
 const Slider = () => {
-  const images: string[] = [
-    "/epiroc.svg",
-    "/manitou.svg",
-    "/zetor.svg",
-    "https://chl.kz/img/chl.png",
-    "https://www.petlas.com/themes/petlas/assets/img/Logo.png",
-    "/epiroc.svg",
-    "/manitou.svg",
-    "/zetor.svg",
-    "https://chl.kz/img/chl.png",
-    "https://www.petlas.com/themes/petlas/assets/img/Logo.png",
-    "/epiroc.svg",
-    "/manitou.svg"
+  const partners = [
+    { name: "Epiroc", logo: "/epiroc.svg" },
+    { name: "Manitou", logo: "/manitou.svg" },
+    { name: "Zetor", logo: "/zetor.svg" },
+    { name: "CHL", logo: "https://chl.kz/img/chl.png" },
+    { name: "Petlas", logo: "https://www.petlas.com/themes/petlas/assets/img/Logo.png" },
   ];
 
+  // Duplicate for seamless loop
+  const allPartners = [...partners, ...partners];
+
   return (
-    <section className="slider">
-      <div className="slide-track">
-        {images.map((image, index) => (
-          <img key={index} src={image} alt={`Partner Logo ${index}`} />
-        ))}
+    <section className="slider-section">
+      <div className="slider-container">
+        <div className="slider-header">
+          <h2 className="slider-title">Наши партнеры</h2>
+          <p className="slider-subtitle">
+            Работаем с ведущими мировыми производителями
+          </p>
+        </div>
+
+        <div className="slider-wrapper">
+          <div className="slider-track">
+            {allPartners.map((partner, index) => (
+              <div key={index} className="slider-item">
+                <div className="partner-card">
+                  <img 
+                    src={partner.logo} 
+                    alt={`${partner.name} Logo`}
+                    className="partner-logo"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="slider-gradient slider-gradient-left"></div>
+        <div className="slider-gradient slider-gradient-right"></div>
       </div>
     </section>
   );
