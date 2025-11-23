@@ -10,10 +10,6 @@ const Hero = () => {
       </div>
 
       <div className="hero-content">
-        <div className="hero-badge">
-          <span className="badge-icon">🚀</span>
-          <span>Основана в 2024 году</span>
-        </div>
 
         <h1 className="hero-title">
           Ваш надежный партнер в сфере{" "}
@@ -27,10 +23,10 @@ const Hero = () => {
         </p>
 
         <div className="hero-industries">
-          <span className="industry-tag">Сельскохозяйственная</span>
-          <span className="industry-tag">Горнорудная</span>
-          <span className="industry-tag">Строительная</span>
-          <span className="industry-tag">Нефтегазовая</span>
+          <span className="industry-tag">Горнорудная оборудования</span>
+          <span className="industry-tag">Строительная оборудования</span>
+          <span className="industry-tag">Нефтегазовая оборудования</span>
+          <span className="industry-tag">Запасные части и сервис</span>
         </div>
 
         <div className="hero-buttons">
@@ -98,10 +94,7 @@ const Hero = () => {
                 <span className="office-marker">📍</span>
                 Алматы
               </div>
-              <div className="office-item">Нур-Султан</div>
-              <div className="office-item">Костанай</div>
-              <div className="office-item">Уральск</div>
-              <div className="office-item">Кокшетау</div>
+              <div className="office-item">Астана</div>
               <div className="office-item">Караганды</div>
               <div className="office-item">Актобе</div>
             </div>

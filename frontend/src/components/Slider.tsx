@@ -4,12 +4,9 @@ const Slider = () => {
   const partners = [
     { name: "Epiroc", logo: "/epiroc.svg" },
     { name: "Manitou", logo: "/manitou.svg" },
-    { name: "Zetor", logo: "/zetor.svg" },
     { name: "CHL", logo: "https://chl.kz/img/chl.png" },
-    { name: "Petlas", logo: "https://www.petlas.com/themes/petlas/assets/img/Logo.png" },
   ];
 
-  // Duplicate for seamless loop
   const allPartners = [...partners, ...partners];
 
   return (
