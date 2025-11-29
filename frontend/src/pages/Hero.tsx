@@ -1,4 +1,5 @@
 import "../styles/pages/Hero.css";
+import IndustryCards from "../components/IndustryCards";
 
 const Hero = () => {
   return (
@@ -10,7 +11,6 @@ const Hero = () => {
       </div>
 
       <div className="hero-content">
-
         <h1 className="hero-title">
           Ваш надежный партнер в сфере{" "}
           <span className="hero-title-gradient">промышленных поставок</span>
@@ -22,20 +22,15 @@ const Hero = () => {
           частей и сервисных услуг для ключевых отраслей промышленности.
         </p>
 
-        <div className="hero-industries">
-          <span className="industry-tag">Горнорудная оборудования</span>
-          <span className="industry-tag">Строительная оборудования</span>
-          <span className="industry-tag">Нефтегазовая оборудования</span>
-          <span className="industry-tag">Запасные части и сервис</span>
-        </div>
+        <IndustryCards />
 
-        <div className="hero-buttons">
+        {/* <div className="hero-buttons">
           <button className="btn btn-primary">
             Запросить коммерческое предложение
             <span className="btn-arrow">→</span>
           </button>
           <button className="btn btn-secondary">Наши услуги</button>
-        </div>
+        </div> */}
 
         <div className="hero-stats">
           <div className="stat-item">

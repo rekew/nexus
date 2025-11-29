@@ -86,24 +86,6 @@
   box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
-.navbar-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-}
-
-.navbar-toggle span {
-  display: block;
-  width: 28px;
-  height: 3px;
-  background: white;
-  border-radius: 2px;
-}
-
 @media (max-width: 1024px) {
   .navbar-container {
     padding: 16px 40px;
@@ -125,10 +107,6 @@
 
   .navbar-btn {
     display: none;
-  }
-
-  .navbar-toggle {
-    display: flex;
   }
 
   .logo-text {

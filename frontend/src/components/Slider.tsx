@@ -4,13 +4,12 @@ const Slider = () => {
   const partners = [
     { name: "Epiroc", logo: "/epiroc.svg" },
     { name: "Manitou", logo: "/manitou.svg" },
-    { name: "CHL", logo: "https://chl.kz/img/chl.png" },
   ];
 
-  const allPartners = [...partners, ...partners];
+  const allPartners = [...partners, ...partners, ...partners, ...partners, ...partners];
 
   return (
-    <section className="slider-section">
+    <footer className="slider-section">
       <div className="slider-container">
         <div className="slider-header">
           <h2 className="slider-title">Наши партнеры</h2>
@@ -38,7 +37,7 @@ const Slider = () => {
         <div className="slider-gradient slider-gradient-left"></div>
         <div className="slider-gradient slider-gradient-right"></div>
       </div>
-    </section>
+    </footer>
   );
 };
 

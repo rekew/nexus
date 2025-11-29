@@ -11,7 +11,7 @@ const Navbar = () => {
           <h1 className="logo-text">Nexus Solution</h1>
         </div>
 
-        <ul className="navbar-menu">
+        {/* <ul className="navbar-menu">
           <li>
             <a href="#home" className="nav-link">
               Главная
@@ -32,15 +32,9 @@ const Navbar = () => {
               Контакты
             </a>
           </li>
-        </ul>
+        </ul> */}
 
-        <button className="navbar-btn">Связаться</button>
-
-        <button className="navbar-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        {/* <button className="navbar-btn">Связаться</button> */}
       </div>
     </nav>
   );
