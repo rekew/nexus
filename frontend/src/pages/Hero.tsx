@@ -95,11 +95,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-
-        <div className="floating-badge">
-          <div className="badge-year">2024</div>
-          <div className="badge-text">Год основания</div>
-        </div>
       </div>
     </section>
   );
