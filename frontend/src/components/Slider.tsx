@@ -3,7 +3,11 @@ import "../styles/components/Slider.css";
 const Slider = () => {
   const partners = [
     { name: "Epiroc", logo: "/epiroc.svg" },
-    { name: "Manitou", logo: "/manitou.svg" },
+    { name: "Sumitomo", logo: "/sumitomo.svg" },
+    { name: "davon", logo: "/davon.svg" },
+    { name: "faresin", logo: "/faresin.svg" },
+    { name: "heli", logo: "https://heli-rus.ru/image/data/logo.jpg" },
+    { name: "deutz", logo: "/deutz.svg" },
   ];
 
   const allPartners = [...partners, ...partners, ...partners, ...partners, ...partners];
