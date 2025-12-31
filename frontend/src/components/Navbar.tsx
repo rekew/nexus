@@ -1,6 +1,11 @@
 import "../styles/components/Navbar.css";
 
 const Navbar = () => {
+
+  function openWhatsapp(){
+    window.open("https://wa.me/77019571855", "_blank");
+  }
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -34,7 +39,7 @@ const Navbar = () => {
           </li>
         </ul> */}
 
-        {/* <button className="navbar-btn">Связаться</button> */}
+        <button onClick={() => openWhatsapp()} className="navbar-btn">Связаться</button>
       </div>
     </nav>
   );
